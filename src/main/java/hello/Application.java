@@ -33,7 +33,7 @@ public class Application {
          //track a custom metric
          telemetryClient.trackMetric("custom metric", 1.0);
 
-        return "Hello World! with monitor";
+        return "Hello World! cloud demo";
     }
 
     public static void main(String[] args) {
