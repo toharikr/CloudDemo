@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: clouddemo 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: clouddemo 
+    spec:
+      containers:
+        - name: clouddemo 
+          image: devopsazure66containerregistry.azurecr.io/clouddemo
+          ports:
+          - containerPort: 8080
